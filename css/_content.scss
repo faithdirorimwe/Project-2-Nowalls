@@ -55,37 +55,47 @@ a:hover{
     line-height: 27.23px;
 }
 
-.btn-font{
-    font-family: "baloo2";
-    font-size: 25px;
-}
+
 
 .subscribe-btn{
     width: 389px;
     height: 70px;
     background-color: #0B394D;
     color: #ffff;
+    font-family: "baloo2";
+    font-size: 25px;
+    border: none;
 }
 
-.infor-btn{
-    width: 531px;
+#infor-btn{
+    margin-top: 16px;
+    width: 360px;
     height: 56px;
     border-radius: 2px;
     color: #0A3140;
+    border: none;
+    font-family: "regularbaloo2";
 }
 
-.message-btn{
-    width: 531px;
-    height: 184px;
+#message-btn{
+    margin-top: 16px;
+    width: 360px;
+    height: 164px;
     border-radius: 2px;
     color: #0A3140;
+    border: none;
+    font-family: "regularbaloo2";
 }
 
-.submit-btn{
-    width: 531px;
+#submit-btn{
+    margin-top: 19px;
+    width: 382px;
     height: 68px;
     background-color: #0B394D;
     color: #ffff;
+    border: none;
+    font-family: "baloo2";
+    font-size: 25px;
 }
 
 
@@ -94,6 +104,21 @@ a:hover{
 @media (min-width: 768px) {
     .main-heading{
         font-size: 50px;
+    }
+
+    #infor-btn{
+        width: 531px;
+        height: 56px;
+    }
+    
+    #message-btn{
+        width: 531px;
+        height: 184px;
+    }
+    
+    #submit-btn{
+        width: 531px;
+        height: 68px;
     }
 }
 

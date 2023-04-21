@@ -74,6 +74,183 @@
     }
 }
 
+#services{
+    margin-top: 81px;
+    background-color: #0B394D;
+
+    .sect-heading{
+        padding-top: 42px;
+        text-align: center;
+        color: #ffff;
+    }
+
+    img{
+        width: 345px;
+        height: 147px;
+        padding: 10px 7px;
+    }
+
+    .card-content{
+        margin: 0 auto;
+        padding-top: 56px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 101px;
+
+        .card-container{
+            margin-top: 29px;
+            width:359px ;
+            height: 402px;
+            background-color: #123E52;
+        }
+    }
+
+    .card-heading{
+        span{
+            display: block;
+          border-bottom: 1px solid #cd7e50;
+        width: 326px;
+        margin: 0 auto;
+        padding-top: 16px;
+       
+        }
+       
+        
+    }
+    h1{
+        padding-top: 9px;
+        padding-left: 13px;
+        
+    }
+
+    p{
+        color: #fff;
+        padding: 13px;
+    }
+}
+
+
+#subscribe{
+    margin-top: 115px;
+    text-align: center;
+
+    img{
+        width: 365px;
+        height: 351px;
+        
+    }
+    .sect-heading{
+        padding-top: 38px;
+        padding-bottom: 74px;
+    }
+
+    .subscribe-btn{
+        text-align: center;
+        
+    }
+
+}
+
+
+#contact{
+    margin-top: 128px;
+    background: linear-gradient(180deg, #EBECEE 0%, #ECEDEF 0.01%, #F5F6F8 100%);
+    text-align: center;
+
+    img{
+        width: 294px;
+        height:438px ;
+    }
+
+    .sect-heading{
+        font-size: 45px;
+    }
+
+    .image{
+        padding-top: 29px;
+    }
+
+    .p-text{
+        margin-top: -35px;
+        p{
+             padding: 60px;
+        }
+    }
+
+   form{
+    margin-bottom: 59px;
+    input, textarea{
+        padding-left: 24px;
+    }
+
+    textarea{
+        padding-top: 12px;
+    }
+   }
+}
+
+
+
+
+footer{
+  
+
+    .image{
+        position: absolute;
+    }
+
+    .footer-inner{
+        position: relative;
+    }
+
+    .sect-heading{
+        text-align: center;
+        padding-top: 94px;
+        color: #fff;
+        font-size: 45px;
+    }
+
+    ul{
+        margin-top: 66px;
+        
+        a{
+          text-decoration: none;  
+          color: #fff;
+          font-family: "baloo2";
+            font-size: 21px;
+        }
+
+        .location{
+            width: 180px;
+            line-height: 33.64px;
+        }
+
+        li{
+            margin-top: 66px;
+         display: flex;  
+         align-items: start;
+         justify-content: center;
+         gap: 21px;
+            
+        }
+
+    }
+
+    .img{
+        text-align: center;
+        img{
+            margin-top: 446px;
+            width:319px ;
+            height: 165px;
+        }
+    }
+    
+}
+
+
+
+
 @media (min-width:768px) {
     #hero{
         margin-top: 45px;
@@ -158,6 +335,12 @@
         p{
             margin-top: 35px;
             width: 475px;
+        }
+    }
+
+    #services{
+        .card-content{
+            flex-direction: row;
         }
     }
 }

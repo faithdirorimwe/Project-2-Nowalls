@@ -165,6 +165,138 @@ header .sidebar--open {
   margin: 0 auto;
 }
 
+#services {
+  margin-top: 81px;
+  background-color: #0B394D;
+}
+#services .sect-heading {
+  padding-top: 42px;
+  text-align: center;
+  color: white;
+}
+#services img {
+  width: 345px;
+  height: 147px;
+  padding: 10px 7px;
+}
+#services .card-content {
+  margin: 0 auto;
+  padding-top: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 101px;
+}
+#services .card-content .card-container {
+  margin-top: 29px;
+  width: 359px;
+  height: 402px;
+  background-color: #123E52;
+}
+#services .card-heading span {
+  display: block;
+  border-bottom: 1px solid #cd7e50;
+  width: 326px;
+  margin: 0 auto;
+  padding-top: 16px;
+}
+#services h1 {
+  padding-top: 9px;
+  padding-left: 13px;
+}
+#services p {
+  color: #fff;
+  padding: 13px;
+}
+
+#subscribe {
+  margin-top: 115px;
+  text-align: center;
+}
+#subscribe img {
+  width: 365px;
+  height: 351px;
+}
+#subscribe .sect-heading {
+  padding-top: 38px;
+  padding-bottom: 74px;
+}
+#subscribe .subscribe-btn {
+  text-align: center;
+}
+
+#contact {
+  margin-top: 128px;
+  background: linear-gradient(180deg, #EBECEE 0%, #ECEDEF 0.01%, #F5F6F8 100%);
+  text-align: center;
+}
+#contact img {
+  width: 294px;
+  height: 438px;
+}
+#contact .sect-heading {
+  font-size: 45px;
+}
+#contact .image {
+  padding-top: 29px;
+}
+#contact .p-text {
+  margin-top: -35px;
+}
+#contact .p-text p {
+  padding: 60px;
+}
+#contact form {
+  margin-bottom: 59px;
+}
+#contact form input, #contact form textarea {
+  padding-left: 24px;
+}
+#contact form textarea {
+  padding-top: 12px;
+}
+
+footer .image {
+  position: absolute;
+}
+footer .footer-inner {
+  position: relative;
+}
+footer .sect-heading {
+  text-align: center;
+  padding-top: 94px;
+  color: #fff;
+  font-size: 45px;
+}
+footer ul {
+  margin-top: 66px;
+}
+footer ul a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "baloo2";
+  font-size: 21px;
+}
+footer ul .location {
+  width: 180px;
+  line-height: 33.64px;
+}
+footer ul li {
+  margin-top: 66px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 21px;
+}
+footer .img {
+  text-align: center;
+}
+footer .img img {
+  margin-top: 446px;
+  width: 319px;
+  height: 165px;
+}
+
 @media (min-width: 768px) {
   #hero {
     margin-top: 45px;
@@ -227,6 +359,9 @@ header .sidebar--open {
   #about p {
     margin-top: 35px;
     width: 475px;
+  }
+  #services .card-content {
+    flex-direction: row;
   }
 }
 @media (min-width: 1440px) {
@@ -303,42 +438,62 @@ a:hover {
   line-height: 27.23px;
 }
 
-.btn-font {
-  font-family: "baloo2";
-  font-size: 25px;
-}
-
 .subscribe-btn {
   width: 389px;
   height: 70px;
   background-color: #0B394D;
   color: white;
+  font-family: "baloo2";
+  font-size: 25px;
+  border: none;
 }
 
-.infor-btn {
-  width: 531px;
+#infor-btn {
+  margin-top: 16px;
+  width: 360px;
   height: 56px;
   border-radius: 2px;
   color: #0A3140;
+  border: none;
+  font-family: "regularbaloo2";
 }
 
-.message-btn {
-  width: 531px;
-  height: 184px;
+#message-btn {
+  margin-top: 16px;
+  width: 360px;
+  height: 164px;
   border-radius: 2px;
   color: #0A3140;
+  border: none;
+  font-family: "regularbaloo2";
 }
 
-.submit-btn {
-  width: 531px;
+#submit-btn {
+  margin-top: 19px;
+  width: 382px;
   height: 68px;
   background-color: #0B394D;
   color: white;
+  border: none;
+  font-family: "baloo2";
+  font-size: 25px;
 }
 
 @media (min-width: 768px) {
   .main-heading {
     font-size: 50px;
+  }
+  #infor-btn {
+    width: 531px;
+    height: 56px;
+  }
+  #message-btn {
+    width: 531px;
+    height: 184px;
+  }
+  #submit-btn {
+    width: 531px;
+    height: 68px;
   }
 }
 @media (min-width: 1200px) {
