@@ -153,16 +153,13 @@ header .sidebar--open {
   height: 289px;
 }
 #about h1 {
-  margin: 0 auto;
   padding-top: 44px;
-  width: 405px;
 }
 #about .p-text {
   margin-top: 18px;
 }
 #about p {
-  width: 397px;
-  margin: 0 auto;
+  padding: 20px;
 }
 
 #services {
@@ -174,13 +171,14 @@ header .sidebar--open {
   text-align: center;
   color: white;
 }
+#services .image {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 #services img {
-  width: 345px;
-  height: 147px;
-  padding: 10px 7px;
+  width: 100%;
 }
 #services .card-content {
-  margin: 0 auto;
   padding-top: 56px;
   display: flex;
   flex-direction: column;
@@ -189,7 +187,7 @@ header .sidebar--open {
 }
 #services .card-content .card-container {
   margin-top: 29px;
-  width: 359px;
+  width: 319px;
   height: 402px;
   background-color: #123E52;
 }
@@ -213,9 +211,12 @@ header .sidebar--open {
   margin-top: 115px;
   text-align: center;
 }
+#subscribe .image {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 #subscribe img {
-  width: 365px;
-  height: 351px;
+  width: 100%;
 }
 #subscribe .sect-heading {
   padding-top: 38px;
@@ -246,18 +247,24 @@ header .sidebar--open {
 #contact .p-text p {
   padding: 60px;
 }
-#contact form {
-  margin-bottom: 59px;
-}
-#contact form input, #contact form textarea {
+#contact input, #contact textarea {
   padding-left: 24px;
+}
+#contact form {
+  overflow-x: hidden;
+  margin-bottom: 59px;
 }
 #contact form textarea {
   padding-top: 12px;
 }
 
 footer .image {
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
+}
+footer .image img {
+  width: 100%;
 }
 footer .footer-inner {
   position: relative;
@@ -289,12 +296,13 @@ footer ul li {
   gap: 21px;
 }
 footer .img {
+  margin-top: 200px;
   text-align: center;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 footer .img img {
-  margin-top: 446px;
-  width: 319px;
-  height: 165px;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -398,7 +406,7 @@ a:hover {
 
 .main-heading {
   font-family: "baloo";
-  font-size: 60px;
+  font-size: 55px;
   color: #0A3140;
 }
 
@@ -439,7 +447,7 @@ a:hover {
 }
 
 .subscribe-btn {
-  width: 389px;
+  width: 329px;
   height: 70px;
   background-color: #0B394D;
   color: white;
@@ -470,7 +478,7 @@ a:hover {
 
 #submit-btn {
   margin-top: 19px;
-  width: 382px;
+  width: 329px;
   height: 68px;
   background-color: #0B394D;
   color: white;

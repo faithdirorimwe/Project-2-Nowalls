@@ -59,9 +59,7 @@
     }
 
     h1{
-        margin: 0 auto;
         padding-top: 44px;
-        width: 405px;
     }
 
     .p-text{
@@ -69,8 +67,7 @@
     }
 
     p{
-        width: 397px;
-        margin: 0 auto;
+       padding: 20px;
     }
 }
 
@@ -84,14 +81,15 @@
         color: #ffff;
     }
 
+    .image{
+     object-fit: contain;
+    }
+
     img{
-        width: 345px;
-        height: 147px;
-        padding: 10px 7px;
+        width: 100%;
     }
 
     .card-content{
-        margin: 0 auto;
         padding-top: 56px;
         display: flex;
         flex-direction: column;
@@ -100,7 +98,7 @@
 
         .card-container{
             margin-top: 29px;
-            width:359px ;
+            width:319px ;
             height: 402px;
             background-color: #123E52;
         }
@@ -135,9 +133,11 @@
     margin-top: 115px;
     text-align: center;
 
+    .image{
+        object-fit: contain;
+    }
     img{
-        width: 365px;
-        height: 351px;
+        width: 100%;
         
     }
     .sect-heading{
@@ -158,6 +158,8 @@
     background: linear-gradient(180deg, #EBECEE 0%, #ECEDEF 0.01%, #F5F6F8 100%);
     text-align: center;
 
+
+    
     img{
         width: 294px;
         height:438px ;
@@ -178,11 +180,14 @@
         }
     }
 
-   form{
-    margin-bottom: 59px;
     input, textarea{
         padding-left: 24px;
     }
+
+   form{
+    overflow-x: hidden;
+    margin-bottom: 59px;
+    
 
     textarea{
         padding-top: 12px;
@@ -194,10 +199,18 @@
 
 
 footer{
-  
-
+//   .image-one{
+//     display: none;
+//   }
+    
     .image{
+        object-fit: cover;
         position: absolute;
+
+        img{
+            width: 100%;
+        }
+      
     }
 
     .footer-inner{
@@ -238,11 +251,11 @@ footer{
     }
 
     .img{
+        margin-top: 200px;
         text-align: center;
+        object-fit: contain;
         img{
-            margin-top: 446px;
-            width:319px ;
-            height: 165px;
+            width: 100%;
         }
     }
     
@@ -282,6 +295,19 @@ footer{
 
         }
     }
+
+    // footer{
+    //     .image-one{
+    //         display: block;
+    //         img{
+    //             width: 1000px;
+    //         }
+    //     }
+
+    //     .image{
+    //         display: none;
+    //     }
+    // }
 }
 
 
