@@ -187,6 +187,7 @@ header .sidebar--open {
   flex-direction: column;
   align-items: center;
   padding-bottom: 101px;
+  gap: 36px;
 }
 #services .card-content .card-container {
   width: 289px;
@@ -232,6 +233,7 @@ header .sidebar--open {
 }
 #subscribe .subscribe-btn {
   text-align: center;
+  width: 299px;
 }
 
 #contact {
@@ -305,7 +307,7 @@ footer ul li {
   gap: 21px;
 }
 footer .img {
-  margin-top: 400px;
+  margin-top: 130px;
   text-align: center;
   -o-object-fit: contain;
      object-fit: contain;
