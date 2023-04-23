@@ -53,9 +53,11 @@
     margin-top: 53px;
     text-align: center;
 
+    .image{
+        object-fit: contain;
+    }
     img{
-        width: 336px;
-        height: 289px;
+        width: 100%;
     }
 
     h1{
