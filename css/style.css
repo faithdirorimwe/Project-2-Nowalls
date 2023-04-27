@@ -166,54 +166,40 @@ header .sidebar--open {
 }
 
 #services {
-  margin-top: 81px;
-  background-color: #0B394D;
+  background-color: #13394d;
+  overflow-x: hidden;
+  padding-bottom: 20px;
 }
 #services .sect-heading {
-  padding-top: 42px;
+  padding-top: 80px;
+  color: #fff;
   text-align: center;
-  color: white;
 }
-#services .image {
-  -o-object-fit: contain;
-     object-fit: contain;
+#services .services-wrapper {
+  padding: 16px;
+  margin-top: 80px;
+}
+#services .services-wrapper .card {
+  background-color: #153e52;
+  width: 316px;
+  height: 418px;
+  box-shadow: 0 0 5px #13394d;
+  transition: 0.2s ease-in-out;
 }
 #services img {
-  width: 100%;
+  padding: 9px;
 }
-#services .card-content {
-  padding-top: 56px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 101px;
-  gap: 36px;
+#services .card-heading {
+  padding-left: 16px;
+  padding-bottom: 18px;
 }
-#services .card-content .card-container {
-  width: 289px;
-  height: 402px;
-  background-color: #123E52;
-}
-#services .card-content .card-container h1 {
-  padding-top: 9px;
-  padding-left: 13px;
-}
-#services .card-content .card-container p {
-  color: #fff;
-  padding: 13px;
-}
-#services .card-content:hover .card-container {
-  background-color: white;
-}
-#services .card-content:hover .card-container p {
-  color: #0B394D;
-}
-#services .card-heading span {
-  display: block;
+#services .card-heading h3 {
+  padding-block: 10px;
   border-bottom: 1px solid #cd7e50;
-  width: 255px;
-  margin: 0 auto;
-  padding-top: 16px;
+}
+#services .card-heading p {
+  font-size: 16px;
+  padding-top: 18px;
 }
 
 #subscribe {
@@ -262,57 +248,62 @@ header .sidebar--open {
   padding-left: 24px;
 }
 #contact form {
-  overflow-x: hidden;
   margin-bottom: 59px;
 }
 #contact form textarea {
   padding-top: 12px;
 }
 
-footer .image {
+#footer {
+  margin-top: 86px;
+}
+#footer .image-one {
+  display: none;
+}
+#footer .image {
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
 }
-footer .image img {
+#footer .image img {
   width: 100%;
 }
-footer .footer-inner {
+#footer .footer-inner {
   position: relative;
 }
-footer .sect-heading {
+#footer .sect-heading {
   text-align: center;
   padding-top: 94px;
   color: #fff;
   font-size: 45px;
 }
-footer ul {
+#footer ul {
   margin-top: 66px;
 }
-footer ul a {
+#footer ul a {
   text-decoration: none;
   color: #fff;
   font-family: "baloo2";
   font-size: 21px;
 }
-footer ul .location {
+#footer ul .location {
   width: 180px;
   line-height: 33.64px;
 }
-footer ul li {
+#footer ul li {
   margin-top: 66px;
   display: flex;
   align-items: start;
   justify-content: center;
   gap: 21px;
 }
-footer .img {
+#footer .img {
   margin-top: 130px;
   text-align: center;
   -o-object-fit: contain;
      object-fit: contain;
 }
-footer .img img {
+#footer .img img {
   width: 100%;
 }
 
@@ -341,31 +332,61 @@ footer .img img {
     width: 90%;
     margin: 0 auto;
   }
+  #services {
+    margin-top: 162px;
+    padding-top: 50px;
+  }
   #services .sect-heading {
     text-align: start;
-    padding-left: 55px;
+    padding: 10px 0 0 30px;
   }
-  #services .card-content {
-    flex-direction: row;
-    justify-content: center;
-    gap: 46px;
+  #services .services-wrapper {
+    padding: 36px;
+    margin-top: 20px;
   }
-  #services .card-content .card-container {
-    width: 416px;
-    height: 418px;
+  #services .services-wrapper .card {
+    width: 346px;
   }
-  #services .card-content span {
-    width: 378px;
+  #subscribe .subscribe-btn {
+    width: 389px;
   }
-  #contact form #submit-btn {
-    width: 551px;
+  #footer .image {
+    display: none;
   }
-  footer .img {
-    margin-top: 430px;
+  #footer .image-one {
+    display: block;
   }
-  footer .img img {
+  #footer .image-one img {
+    width: 100%;
+  }
+  #footer .img {
+    margin-top: -240px;
+  }
+  #footer .img img {
     width: 319px;
     height: 165px;
+  }
+  #footer .footer-inner {
+    top: -280px;
+  }
+  #footer .footer-inner .sect-heading {
+    padding-bottom: 30px;
+    padding-left: 94px;
+    display: flex;
+    gap: 10px;
+    font-size: 30px;
+  }
+  #footer ul {
+    padding-left: 94px;
+    display: flex;
+    align-items: start;
+    gap: 41px;
+  }
+  #footer ul li {
+    margin-top: -74px;
+  }
+  #footer ul li a {
+    font-size: 16px;
   }
 }
 @media (min-width: 900px) {
@@ -387,6 +408,15 @@ footer .img img {
   #about h1 {
     width: 415px;
   }
+  #services .services-wrapper {
+    padding: 46px;
+  }
+  #services .services-wrapper .card {
+    width: 256px;
+  }
+  #footer .footer-inner {
+    top: -310px;
+  }
 }
 @media (min-width: 1200px) {
   #hero .heading-content {
@@ -406,11 +436,14 @@ footer .img img {
     margin-top: 35px;
     width: 475px;
   }
-  #services .sect-heading {
-    padding: 114px 81px;
+  #services {
+    padding: 80px;
   }
-  #services .card-content {
-    margin-bottom: 114px;
+  #services .services-wrapper {
+    padding: 45px;
+  }
+  #services .services-wrapper .card {
+    width: 306px;
   }
   #subscribe {
     margin-top: 288px;
@@ -458,14 +491,26 @@ footer .img img {
     padding: 0;
     width: 350px;
   }
-  #contact form #infor-btn {
-    height: 46px;
-  }
-  #contact form #message-btn {
-    height: 124px;
-  }
   #contact .get-in-touch {
     margin-top: 60px;
+  }
+  #footer {
+    margin-top: 83px;
+  }
+  #footer .sect-heading p {
+    font-size: 45px;
+  }
+  #footer .footer-inner {
+    top: -380px;
+  }
+  #footer .footer-inner ul {
+    gap: 110px;
+  }
+  #footer .footer-inner a {
+    font-size: 21px;
+  }
+  #footer .img {
+    margin-top: -290px;
   }
 }
 @media (min-width: 1440px) {
@@ -486,8 +531,18 @@ footer .img img {
   #about p {
     width: 683px;
   }
+  #services {
+    padding: 150px;
+  }
+  #services .services-wrapper .card {
+    width: 356px;
+    height: 418px;
+  }
   #contact .contact-inner {
     gap: 258px;
+  }
+  #footer .footer-inner {
+    top: -420px;
   }
 }
 section {
@@ -505,7 +560,7 @@ a:hover {
 
 .main-heading {
   font-family: "baloo";
-  font-size: 55px;
+  font-size: 50px;
   color: #0A3140;
 }
 
@@ -556,9 +611,8 @@ a:hover {
 }
 
 #infor-btn {
-  margin-top: 16px;
-  width: 360px;
-  height: 56px;
+  width: 290px;
+  padding: 20px;
   border-radius: 2px;
   color: #0A3140;
   border: none;
@@ -566,9 +620,7 @@ a:hover {
 }
 
 #message-btn {
-  margin-top: 16px;
-  width: 360px;
-  height: 164px;
+  padding: 100px;
   border-radius: 2px;
   color: #0A3140;
   border: none;
@@ -576,9 +628,8 @@ a:hover {
 }
 
 #submit-btn {
-  margin-top: 19px;
-  width: 329px;
-  height: 68px;
+  width: 299px;
+  padding: 30px;
   background-color: #0B394D;
   color: white;
   border: none;
@@ -587,9 +638,6 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-  .main-heading {
-    font-size: 50px;
-  }
   #infor-btn {
     width: 531px;
     height: 56px;
