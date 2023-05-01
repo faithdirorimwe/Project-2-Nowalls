@@ -131,17 +131,17 @@ header .sidebar--open {
   height: 3px;
   background-color: #cd7e50;
 }
-#hero .images-container {
-  margin-top: 56.65px;
-}
-#hero .images-container .images {
+#hero .images {
+  margin-top: 56px;
   overflow-x: auto;
   display: flex;
   align-items: end;
   gap: 10px;
 }
-#hero .images-container .images .one img {
-  margin-top: 10px;
+#hero .images > img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 #about {
@@ -199,7 +199,8 @@ header .sidebar--open {
 }
 #services .card-heading p {
   font-size: 16px;
-  padding-top: 18px;
+  padding: 5px;
+  margin-top: 18px;
 }
 
 #subscribe {
@@ -327,6 +328,7 @@ header .sidebar--open {
   #hero .p-text {
     justify-content: start;
     padding-top: 4px;
+    padding-bottom: 56px;
   }
   #hero .images {
     width: 90%;
@@ -517,12 +519,10 @@ header .sidebar--open {
   #hero .heading-content {
     padding-left: 60px;
   }
-  #hero img {
-    width: 360px;
-  }
   #hero .images {
-    overflow-x: visible;
-    width: 90%;
+    width: 100%;
+    overflow: visible;
+    padding: 40px;
   }
   #about h1 {
     width: 580px;
@@ -535,7 +535,7 @@ header .sidebar--open {
     padding: 150px;
   }
   #services .services-wrapper .card {
-    width: 356px;
+    width: 346px;
     height: 418px;
   }
   #contact .contact-inner {
@@ -629,7 +629,7 @@ a:hover {
 
 #submit-btn {
   width: 299px;
-  padding: 30px;
+  padding: 20px;
   background-color: #0B394D;
   color: white;
   border: none;

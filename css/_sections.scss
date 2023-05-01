@@ -34,21 +34,17 @@
         }
     }
 
-    .images-container {
-        margin-top: 56.65px;
+    .images {
+        margin-top: 56px;
+        overflow-x: auto;
+        display: flex;
+        align-items: end;
+        gap: 10px;
 
-        .images {
-            overflow-x: auto;
-            display: flex;
-            align-items: end;
-            gap: 10px;
 
-            .one {
-                img {
-                    margin-top: 10px;
-                    //         // -webkit-box-reflect: below 10px linear-gradient(transparent, #0001);
-                }
-            }
+        >img {
+            width: 100%;
+            object-fit: contain;
         }
     }
 }
@@ -118,7 +114,8 @@
 
         p {
             font-size: 16px;
-            padding-top: 18px;
+            padding: 5px;
+            margin-top: 18px;
 
         }
     }
@@ -290,29 +287,31 @@
         .p-text {
             justify-content: start;
             padding-top: 4px;
+            padding-bottom: 56px;
         }
 
-        .images {
+        .images{
             width: 90%;
-            margin: 0 auto;
-
+            margin: 0 auto
         }
+
     }
 
 
     #services {
         margin-top: 162px;
         padding-top: 50px;
+
         .sect-heading {
             text-align: start;
-            padding:10px 0 0 30px;
+            padding: 10px 0 0 30px;
         }
 
-        .services-wrapper{
+        .services-wrapper {
             padding: 36px;
             margin-top: 20px;
 
-            .card{
+            .card {
                 width: 346px;
             }
         }
@@ -408,11 +407,11 @@
 
     }
 
-    #services{
-        .services-wrapper{
+    #services {
+        .services-wrapper {
             padding: 46px;
 
-            .card{
+            .card {
                 width: 256px;
             }
         }
@@ -432,6 +431,7 @@
         .heading-content {
             padding-left: 90px;
         }
+
 
     }
 
@@ -456,9 +456,10 @@
     #services {
         padding: 80px;
 
-        .services-wrapper{
+        .services-wrapper {
             padding: 45px;
-            .card{
+
+            .card {
                 width: 306px;
             }
         }
@@ -570,14 +571,13 @@
             padding-left: 60px;
         }
 
-        img {
-            width: 360px;
+        .images {
+            width: 100%;
+            overflow:visible;
+        padding: 40px;
         }
 
-        .images {
-            overflow-x: visible;
-            width: 90%;
-        }
+
 
     }
 
@@ -597,7 +597,7 @@
 
         .services-wrapper {
             .card {
-                width: 356px;
+                width: 346px;
                 height: 418px;
             }
         }
